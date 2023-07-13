@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("3042.png");
+    background-color: rgb(190, 187, 187);
+    background-blend-mode:darken;
+    min-height: 100vh;
+}
+.box{
+    padding-top: 3rem;
+}
+h1{
+    font-family: 'Caprasimo', cursive;
+    text-decoration: underline;
+    letter-spacing:4px;
+    font-size: 55px;
+    margin-bottom: 3rem;
+    font-weight: bold;
+        color: sienna;
+     /* color: #966F33;     html code for wood */
+}
+h1,
+.input-container,
+.operation-container,
+.other-operation-container,
+.container
+{
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   flex-wrap: wrap;
+   padding: 0;
+
+}
+.container{
+    width: 275px; 
+    height: 460px;
+    padding: 5px;
+    border: 10px solid rgb(100, 95, 95);
+    border-radius:20px;
+    background-color: rgba(187, 181, 181, 0.79);
+}
+.output-screen{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    background-color: rgb(225, 225, 225);
+    padding: 5px;
+    overflow: auto;
+    font-size: 1.5rem;
+}
+::-webkit-scrollbar{
+display: none;    
+}
+.input-container{
+    width: 180px;
+}
+.operation-container{
+    width: 60px;
+}
+
+.digits,.symbols{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 5px;
+    font-size: large;
+}
+.fa-delete-left{
+    font-size: 40px;
+    color: rgb(54, 51, 51);
+}
+@media only screen and (max-width: 500px) {
+    h1{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+}
+@media only screen and (max-width:980px) and (min-width: 501px) {
+    h1{
+        font-size: 3rem;
+    }
+}
